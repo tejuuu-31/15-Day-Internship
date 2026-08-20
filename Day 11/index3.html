@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<form action="" id="loginForm">
+<input type="text" placeholder="Enter your name">
+<input type="password" placeholder="Enter Your password">
+<button type="submit">Login</button>
+</form>
+
+<script>
+let form = document.getElementById("loginForm");
+form.addEventListener("submit", function(event){
+event.preventDefault();
+alert("Login button is clicked")
+
+})
+</script>
+</body>
+</html>

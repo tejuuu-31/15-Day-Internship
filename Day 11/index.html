@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<button id="mybtn">Click Me</button>
+<h3 id="status">Light is OFF</h3>
+<button id="swbtn">Turn ON</button>
+
+<script>
+let btn = document.getElementById("mybtn");
+btn.addEventListener("click", function(){
+alert("You clicked the button")
+});
+
+let swbtn = document.getElementById("swbtn");
+let status = document.getElementById("status");
+swbtn.addEventListener("click", function(){
+status.textContent = "Light is ON";
+swbtn.textContent = "Turn OFF";
+})
+
+</script>
+</body>
+</html>

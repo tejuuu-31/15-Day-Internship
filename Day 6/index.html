@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ .navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: black;
+ color: white;
+ padding: 15px;
+ }
+ .logo{
+ color: orangered;
+ font-weight: 600;
+ font-size: 35px;
+ }
+ .nav-links {
+ display: flex;
+ list-style: none;
+ gap: 20px;
+
+ }
+ .nav-links a{
+ text-decoration: none;
+ color: azure;
+ }
+ /* Responsive */
+ @media (max-width:600px){
+ .navbar{
+ flex-direction: column;
+ gap: 15px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <nav class="navbar">
+ <div class="logo">BrandLogo</div>
+ <ul class="nav-links">
+ <li><a href="">Home</a></li>
+ <li><a href="">About</a></li>
+ <li><a href="">Contact</a></li>
+ </ul>
+ </nav>
+ <!-- html command -->
+</body>
+</html>
