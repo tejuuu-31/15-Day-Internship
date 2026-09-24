@@ -17,26 +17,29 @@
  <meta name="twitter:description" content="Check out my portfolio and projects">
  <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/009/633/016/.jpg"
   type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <!-- Header + Navigation -->
-</header class ="site Header">
- <nav class="nav bar">
-  <div class = "logo">TEJ</div>
-  <ul class="nav-links">
-   <li><a href="">Home</a></li>
-   <li><a href="">About</a></li>
-   <li><a href="">Projects</a></li>
-   <li><a href="">Contact</a></li>
-  </ul>
- </nav>
+<header class="site-header">
+  <nav class="nav-bar">
+    <div class="logo">TEJ</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
   <!-- MAIN CONTENT -->
    <main>
     <!-- HERO SECTION -->
      <Section class="hero-section" id="home">
        <h1>Hi, I'm Tejashwini</h1>
-       <p>I'm a passionate engineering student with a love for web development and technology. I enjoy creating innovative solutions and exploring new technologies. Welcome to my portfolio!</p>
+       <p>I'm a passionate engineering student with a love for web development and technology. </p>
+       <br>
+       <br>
       <div>
         <a href=""class="btn btn-primary">View My Work</a>
         <a href=""class="btn btn-secondary">Contact Me</a>
@@ -51,27 +54,38 @@
             <figcaption>Tejashwini-Engineering student</figcaption>
           </figure>
           <div class="about text">
-                <p>I am currently pursuing my engineering degree at Ramaiah Academy. I have a strong interest in web development, particularly in building responsive and user-friendly websites. I am always eager to learn new skills and take on challenging projects.</p>
+                <p>I am currently pursuing my engineering degree at Ramaiah Academy. 
+                  <br> I have a strong interest in web development, particularly in building responsive and user-friendly websites.<br> I am always eager to learn new skills and take on challenging projects.</p>
           </div>
         </div>
       </section>
+      <!-- Skills section -->
+      <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JS</div>
+          <div class="skill-item">REACT</div>
+        </div>  
+      </section>
       <!-- Project section -->
-       <section>
-        <h2>My Projects</h2>
+       <section class="project section">
+        <h2>Projects</h2>
         <div class="project-grid">
           <article class="project-card">
-            <img width="690" height="500" src="https://as2.ftcdn.net/v2/jpg/05/04/97/25/1000_F_504972508_Wf2SZn4Vt0DmM7y1P2eea9L2e0ArTKjd.jpg" alt="weather image">
+            <img width="400" height="400" src="https://th.bing.com/th/id/OIP.W81pUm4Cky36gAu4f7poQgHaFj?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Weather App">
             <h3>Weather App</h3>
             <p>A web application that provides real-time weather information for any location.</p>
             <div class="project-links">
               <span class="tag">React</span> <br>
-              span class="tag">API</span> <br>
+              <span class="tag">API</span> <br>
             </div> <br>
             <a href="" class="btn">Live Demo</a><br>
             <a href="" class="btn">GitHub</a>
           </article>
           <article class="project-card">
-            <img width="690" height="500" src="https://www.shutterstock.com/image-vector/calculator-app-cartoon-smartphone-interface-600nw-1791440807.jpg" alt="Calculator App">
+            <img width="400" height="400" src="https://www.shutterstock.com/image-vector/calculator-app-cartoon-smartphone-interface-600nw-1791440807.jpg" alt="Calculator App">
             <h3>Calculator App</h3>
             <p>A simple yet efficient calculator application for basic arithmetic operations.</p>
             <div class="project-tag">
@@ -85,31 +99,35 @@
         </div>
        </section> 
        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-          <h2>Get in Touch</h2>
-          <form action="">
-            <div class="form group">
-              <label for="name">Name:</label>
-              <input type="text" required>
-            </div>
-            <div class="form group">
-              <label for="email">Email:</label>
-              <input type="email" required>
-            </div>
-            <div class="form group">
-              <label for="message">Message:</label>
-              <textarea id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; 2026 Tejashwini build with HTML.</p>
-        <nav>
-          <a href="https://github.com/tejuuu-31" target="_blank">GitHub</a> <br>
-          <a href="https://www.linkedin.com/in/tejashwini-rajesh-2423813ba" target="_blank">LinkedIn</a> <br>
-        </nav>
-      </footer>
-    </body>
-  </html>
+        <section class="contact-section">
+  <h2>Get in Touch</h2>
+
+  <div class="contact-card">
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Tejashwini - build with HTML, CSS, and JavaScript.</p>
+  <div class="social-links">
+    <a href="https://github.com/tejuuu-31" class="social-btn">GitHub</a>
+    <a href="https://www.linkedin.com/in/tejashwini-rajesh-2423813ba" class="social-btn">LinkedIn</a>
+  </div>
+</footer>

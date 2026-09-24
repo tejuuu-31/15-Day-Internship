@@ -1,0 +1,49 @@
+.about-section {
+  background-color: #080808;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.about-section h2 {
+  color: aqua;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.profile-figure img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid aqua;
+}
+
+.profile-figure figcaption {
+  margin-top: 15px;
+  color: aqua;
+}
+
+.about-text {
+  max-width: 600px;
+  color: #ddd;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+body.light-theme .about-section {
+  background-color: azure;
+}
+
+body.light-theme .about-section h2,
+body.light-theme .about-text,
+body.light-theme .profile-figure figcaption {
+  color: darkcyan;
+}

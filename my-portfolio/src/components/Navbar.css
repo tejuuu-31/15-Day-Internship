@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: aqua;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: crimson;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+body.light-theme .navbar {
+  background-color: azure;
+}
+
+body.light-theme .nav-links a {
+  color: darkcyan;
+}
