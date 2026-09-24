@@ -1,0 +1,79 @@
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1),
+    rgba(9, 9, 121, 1),
+    rgba(255, 0, 51, 1)
+  );
+}
+
+.hero-section h1 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  color: aqua;
+}
+
+.hero-section p {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: rgb(0, 200, 255);
+  color: rgb(4, 4, 53);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgb(0, 200, 255);
+  color: aqua;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border: 1px solid aqua;
+  color: aqua;
+}
+
+.btn-secondary:hover {
+  background: rgb(0, 200, 255);
+  color: rgb(4, 4, 53);
+}
+
+body.light-theme .hero-section {
+  background: linear-gradient(
+    90deg,
+    rgb(191, 239, 246),
+    rgb(198, 235, 249)
+  );
+}
+
+body.light-theme .hero-section h1,
+body.light-theme .hero-section p {
+  color: darkcyan;
+}

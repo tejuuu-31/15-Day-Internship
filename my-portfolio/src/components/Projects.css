@@ -1,0 +1,90 @@
+.projects-section {
+  background-color: black;
+  padding: 80px 40px;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: aqua;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 420px;
+  padding: 20px;
+  background-color: #11116b;
+  border: 2px solid darkblue;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: aqua;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.project-card h3 {
+  color: orange;
+  font-size: 25px;
+  margin: 20px 0 10px;
+}
+
+.project-card p {
+  color: bisque;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.project-tags span {
+  color: aqua;
+  border: 1px solid aqua;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+.project-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: aqua;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+body.light-theme .projects-section {
+  background-color: azure;
+}
+
+body.light-theme .project-card {
+  background-color: white;
+  border-color: darkcyan;
+}
+
+body.light-theme .project-card p {
+  color: #555;
+}

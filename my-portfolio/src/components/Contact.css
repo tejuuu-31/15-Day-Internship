@@ -1,0 +1,83 @@
+.contact-section {
+  min-height: 80vh;
+  padding: 80px 40px;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20230415/pngtree-website-technology-line-dark-background-image_3816178.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: aqua;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: aqua;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: transparent;
+  border: 2px solid aqua;
+  color: white;
+}
+
+body.light-theme .contact-section {
+  background:
+    linear-gradient(
+      rgba(200, 240, 245, 0.8),
+      rgba(200, 240, 245, 0.8)
+    ),
+    url("https://png.pngtree.com/thumb_back/fw800/background/20230415/pngtree-website-technology-line-dark-background-image_3816178.jpg");
+
+  background-size: cover;
+}
+
+body.light-theme .contact-section h2,
+body.light-theme .form-group label {
+  color: darkcyan;
+}
